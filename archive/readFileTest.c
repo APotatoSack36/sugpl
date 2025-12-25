@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main(){
-    FILE *fptr;
-    fptr = fopen("data/save.txt", "r");
+    FILE *save;
+    save = fopen("data/save.txt", "r");
     char line[128];
     int testt =0 ;
     char boolStr[6]; // "true" or "false"
-    while (fgets(line, sizeof(line), fptr)) {
-    sscanf(line, "%d", &testt);
+    while (fgets(line, sizeof(line), save)) {
+        sscanf(line, "%d", &testt);
     }
     printf("%d", testt);
-    fclose(fptr);
+    fclose(save);
 }

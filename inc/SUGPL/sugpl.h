@@ -11,16 +11,34 @@ void SUG_InitWindow(uint16_t width, uint16_t height){
     renderer = SDL_CreateRenderer(window, -1, 0);
 }
 
-void SUG_ClearRender(struct Color backGroundColor){
+void SUG_ClearRender(Color backGroundColor){
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_RenderClear(renderer);
+}
+
+_Bool SUG_DetectCollisions(){
+    //Box on box
+
+    //Box on line
+
+    //Box on circle
+
+    //line on circle
+
+    //line on line
+
+    //Circle on circle
+}
+
+void SUG_ResolveCollisions(){
+
 }
 
 void SUG_Render(){
 
     SDL_RenderPresent(renderer);
 
-    struct Color background = {0, 0, 0, 255};
+    Color background = {0, 0, 0, 255};
     SUG_ClearRender(background);
 }
 

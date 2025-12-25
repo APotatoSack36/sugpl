@@ -7,6 +7,7 @@
 #define SCREEN_HEIGHT 700
 
 
+
 int main(){
     SUG_InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT);
 
